@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Toolbar Color Experiment</title>
+
+
+	<!-- Chrome, Firefox OS, Opera and Vivaldi -->
+	<meta name="theme-color" content="#4285f4">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#4285f4">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+
+	<style>
+
+	</style>
+
+</head>
+
+<body>
+
+	<button id="red">RED</button>
+	<br>
+	<br>
+	<br>
+	<button id="blue">BLUE</button>
+
+	<script>
+		var redBtn = document.getElementById('red');
+		var blueBtn = document.getElementById('blue');
+
+		redBtn.addEventListener('click', function () {
+			changeThemeColor('red');
+		});
+
+		blueBtn.addEventListener('click', function () {
+			changeThemeColor('blue');
+		});
+
+		var chromeTheme = document.getElementsByName('theme-color')[0],
+			windowsPhoneTheme = document.getElementsByName('msapplication-navbutton-color')[0],
+			iosTheme = document.getElementsByName('apple-mobile-web-app-status-bar-style')[0];
+
+		function changeThemeColor(color) {
+			chromeTheme.setAtrubute('content', color);
+			windowsPhoneTheme.setAtrubute('content', color);
+			iosTheme.setAtrubute('content', color);
+		}
+	</script>
+
+
+</body>
+
+</html>
