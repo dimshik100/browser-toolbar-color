@@ -34,7 +34,7 @@
 		var blueBtn = document.getElementById('blue');
 
 		redBtn.addEventListener('click', function () {
-			changeThemeColor('red');
+			changeThemeColor('#ff0000');
 		});
 
 		blueBtn.addEventListener('click', function () {
@@ -46,9 +46,9 @@
 			iosTheme = document.getElementsByName('apple-mobile-web-app-status-bar-style')[0];
 
 		function changeThemeColor(color) {
-			chromeTheme.setAtrubute('content', color);
-			windowsPhoneTheme.setAtrubute('content', color);
-			iosTheme.setAtrubute('content', color);
+			chromeTheme.setAttribute('content', color);
+			windowsPhoneTheme.setAttribute('content', color);
+			iosTheme.setAttribute('content', color);
 		}
 	</script>
 
