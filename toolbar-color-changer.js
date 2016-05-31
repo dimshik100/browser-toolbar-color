@@ -1,3 +1,6 @@
+// color transition functions by http://akinuri.com/exps/color-transition/
+
+
 // ========== Transition graph begin. This isn't part of the actual code. ==========
 //var stats = {};
 //stats.table = document.getElementById("stats").tBodies[0];
@@ -206,3 +209,68 @@ function changeThemeColor(color) {
 	windowsPhoneTheme.setAttribute('content', color);
 	iosTheme.setAttribute('content', color);
 }
+
+
+
+
+var colors = [{
+	"name": "turquoise",
+	"color": "#1abc9c"
+}, {
+	"name": "emerland",
+	"color": "#2ecc71"
+}, {
+	"name": "peter-river",
+	"color": "#3498db"
+}, {
+	"name": "amethyst",
+	"color": "#9b59b6"
+}, {
+	"name": "wet-asphalt",
+	"color": "#34495e"
+}, {
+	"name": "green-sea",
+	"color": "#16a085"
+}, {
+	"name": "nephritis",
+	"color": "#27ae60"
+}, {
+	"name": "belize-hole",
+	"color": "#2980b9"
+}, {
+	"name": "wisteria",
+	"color": "#8e44ad"
+}, {
+	"name": "midnight-blue",
+	"color": "#2c3e50"
+}, {
+	"name": "sun-flower",
+	"color": "#f1c40f"
+}, {
+	"name": "carrot",
+	"color": "#e67e22"
+}, {
+	"name": "alizarin",
+	"color": "#e74c3c"
+}, {
+	"name": "clouds",
+	"color": "#ecf0f1"
+}, {
+	"name": "concrete",
+	"color": "#95a5a6"
+}, {
+	"name": "orange",
+	"color": "#f39c12"
+}, {
+	"name": "pumpkin",
+	"color": "#d35400"
+}, {
+	"name": "pomegranate",
+	"color": "#c0392b"
+}, {
+	"name": "silver",
+	"color": "#bdc3c7"
+}, {
+	"name": "asbestos",
+	"color": "#7f8c8d"
+}];
